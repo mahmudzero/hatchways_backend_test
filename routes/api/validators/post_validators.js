@@ -55,7 +55,7 @@ function validateSortDirectionParam({ req = {} } = {}) {
   const sortDirection = req.query.direction;
   const error = {
     name: ERROR_NAME__INVALID_PARAM,
-    message: 'direciton parameter is invalid'
+    message: 'direction parameter is invalid'
   };
 
   if (sortDirection !== undefined && !sortDirections[sortDirection]) {
